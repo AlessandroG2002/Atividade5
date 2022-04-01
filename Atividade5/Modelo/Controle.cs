@@ -26,7 +26,13 @@ namespace Atividade5.Modelo
 
         public bool cadastrar(String login, String senha, String confirmarSenha)
         {
-            
+            encontrado = loginDao.cadastrar(login, senha, confirmarSenha);
+
+            if (!loginDao.mensagem.Equals(""))
+            {
+                this.mensagem = loginDao.mensagem;
+            }
+
             return encontrado;
         }
     }

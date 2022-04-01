@@ -64,6 +64,11 @@
     <Compile Include="Apresentação\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Atividade5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Atividade5DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DAO\Conexao.cs" />
     <Compile Include="DAO\LoginDao.cs" />
     <Compile Include="Modelo\Controle.cs" />
@@ -88,6 +93,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Atividade5DataSet.xsc">
+      <DependentUpon>Atividade5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Atividade5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Atividade5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Atividade5DataSet.xss">
+      <DependentUpon>Atividade5DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

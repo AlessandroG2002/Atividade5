@@ -13,7 +13,7 @@ namespace Atividade5.DAO
 
         public Conexao()
         {
-            con.ConnectionString = @"Data Source=PAT001734;Initial Catalog=Atividade5;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-3495UF0\SQLEXPRESS;Initial Catalog=Atividade5;Integrated Security=True";
         }
 
         public SqlConnection conectar()

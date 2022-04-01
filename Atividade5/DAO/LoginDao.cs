@@ -40,8 +40,28 @@ namespace Atividade5.DAO
             return tem;
         }
 
-        public bool Cadastrar(String login, String senha, string confirmarSenha)
+        public bool cadastrar(String login, String senha, string confirmarSenha)
         {
+            command.CommandText = "insert into usuario (login, senha) " +
+                        "values (@login, @senha)";
+
+            command.Parameters.AddWithValue("@login", login);
+            command.Parameters.AddWithValue("@senha", senha);
+
+            Conexao con = new Conexao();
+
+            try
+            {
+                command.Connection = con.conectar();
+                dr = command.ExecuteReader();
+
+                if (dr.HasRows)
+                    tem = true;
+            }
+            catch (SqlException)
+            {
+                this.mensagem = "Erro com Banco de Dados!";
+            }
             return tem;
         }
     }

@@ -42,7 +42,6 @@
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Location = new System.Drawing.Point(182, 18);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.PasswordChar = '*';
             this.txtLogin.Size = new System.Drawing.Size(294, 23);
             this.txtLogin.TabIndex = 6;
             // 
@@ -107,6 +106,7 @@
             this.btnCadastro.TabIndex = 12;
             this.btnCadastro.Text = "Cadastro";
             this.btnCadastro.UseVisualStyleBackColor = true;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // Cadastro
             // 
